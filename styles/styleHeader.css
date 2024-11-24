@@ -1,0 +1,161 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 80%;
+    font-family: "RUSNeverwinter", sans-serif;
+  }
+  
+  
+  .headerName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em; /* Промежуток между элементами */
+    width: min(25%, 300px); /* Ограничиваем ширину */
+  }
+  
+  .headerLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80px; /* Ограничение ширины логотипа */
+    flex-shrink: 0; /* Запрещает сжатие логотипа при недостатке пространства */
+    height: auto;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 0px;
+    animation: glow 2s infinite alternate;
+    font-family: "Letopis", sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .headerLogo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .headerLogo p {
+    padding: 0px;
+    margin: 0px;
+    font-size: clamp(1.2rem, 2vw + 1rem, 2rem);
+  }
+  
+  @media (max-width: 1440px) {
+    .headerLogo p {
+      font-size: clamp(1.1rem, 2vw + 1rem, 1.8rem);
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .headerLogo p {
+      font-size: clamp(1rem, 2vw + 1rem, 1.6rem);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .headerLogo p {
+      font-size: clamp(0.9rem, 2vw + 1rem, 1.4rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .headerLogo p {
+      font-size: clamp(0.8rem, 2vw + 1rem, 1.2rem);
+    }
+  }
+  
+  .headerH1 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 65%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    animation: glow 2s infinite alternate;
+    font-size: clamp(0.7rem, 2vw + 1rem, 1.5rem);
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Свойства для картинки, чтобы была фоном и имела низкую прозрачность а текст был виден */
+  .headerH1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/images/hohloma3little.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+    border-radius: 20px;
+  }
+  
+  
+  .headerNavParent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(60% - 1.5em); /* Уменьшение ширины на величину отступов */
+    gap: 1.5em;  /* Отступы между пунктами меню */
+    color: #fff;
+  }
+  
+  .headerNavChilds {
+    position: relative;
+    z-index: 1;
+    font-family: "Kramola", sans-serif;
+    padding: 5px;
+    animation: glow 2s infinite alternate;
+    font-family: "Kramola", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease-in-out; /* Плавные переходы */
+  }
+  
+  /* Свойства для картинки, чтобы была фоном и имела низкую прозрачность а текст был виден */
+  .headerNavChilds::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/images/hohloma3little.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  
+  .headerProfile {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 15%;
+    gap: 10px;
+  }
+  
+  .headerProfile img {
+    width: 30%;
+    border-radius: 20px;
+    animation: glow 2s infinite alternate;
+  }
+  

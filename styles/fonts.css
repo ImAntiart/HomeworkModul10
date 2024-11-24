@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "RUSNeverwinter";
+  src: url("/fonts/rusneverwinter.ttf") format("ttf"),
+    url("/fonts/rusneverwinter.woff") format("woff"),
+    url("/fonts/rusneverwinter.woff2") format("woff2");
+}
+
+
+
+@font-face {
+  font-family: "Letopis";
+  src: url("/fonts/Letopis.ttf") format("ttf"),
+    url("/fonts/Letopis.woff") format("woff"),
+    url("/fonts/Letopis.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Kramola";
+  src: url("/fonts/Kramola.ttf") format("ttf"),
+    url("/fonts/Kramola.woff") format("woff"),
+    url("/fonts/Kramola.woff2") format("woff2");
+}

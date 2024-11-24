@@ -1,0 +1,8 @@
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px rgb(255, 0, 0);
+    }
+    to {
+        box-shadow: 0 0 20px rgb(255, 115, 0);
+    }
+}
