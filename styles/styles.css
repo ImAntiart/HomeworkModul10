@@ -1,5 +1,5 @@
 html {
-  background-image: url("/images/backgroundHorizontal1.jpg");
+  background-image: url("./images/backgroundHorizontal1.jpg");
   background-color: #85bb8a;
   background-repeat: no-repeat;
   background-position: center center;
@@ -12,7 +12,7 @@ html {
 
 @media (orientation: portrait) {
     html {
-        background-image: url('/images/backgroundVertical.jpg');
+        background-image: url('./images/backgroundVertical.jpg');
     }
 }
 
