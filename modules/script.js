@@ -200,10 +200,8 @@ class Application {
     // функция для старта приложения в которой выполняются все настройки
     this.registerCreateProductEvent()
     this.registerCategoryFilterEvent()
-    
     // Показываем уведомление об успехе, если всё прошло успешно
     this.fetchCategories().then(() => { showNotification('Категории загружены успешно'); });
-
     this.registerWindowOnloadEvent()
     this.displayProducts() // Начальная загрузка товаров
   }
