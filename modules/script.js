@@ -85,7 +85,7 @@ class ProductAPI {
       });
       if (!response.ok) throw new Error('Ошибка при добавлении товара');
   
-      return response.json();
+      return await response.json();
   }
 
   static async delete(productId) {
@@ -103,14 +103,14 @@ class ProductAPI {
       const response = await fetch(url);
       if (!response.ok) throw new Error('Ошибка при загрузке товаров');
 
-      return response.json();
+      return await response.json();
   }
 
   static async getCategories() {
       const response = await fetch('https://fakestoreapi.com/products/categories');
       if (!response.ok) throw new Error('Не удалось получить категории');
 
-      return response.json();
+      return await response.json();
   }
 }
 
